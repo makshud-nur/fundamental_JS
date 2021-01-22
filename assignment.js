@@ -1,7 +1,4 @@
 // https://github.com/makshud-nur/fundamental_JS
-/**
-if kmeter>0; than do the function, else...
- */
 function kilometerToMeter(kmeter){
     if(kmeter > 0) {
         const mtr = kmeter * 1000; //multiply with 100
@@ -13,9 +10,7 @@ function kilometerToMeter(kmeter){
     }
 }
 //console.log(kilometerToMeter(-2));
-/**
-if watch>=0; phone>=0 and laptop>=0 than do the function else...
- */
+
 function budgetCalculator(watch, phone, laptop){
     if (watch >= 0 && phone >= 0 && laptop >=0){
         const watchCost = watch * 50;
@@ -30,6 +25,7 @@ function budgetCalculator(watch, phone, laptop){
     }
 }
 //console.log(budgetCalculator(2, 4, -2));
+
 function hotelCost(dayNoAtHotel){
     //for negative days in hotel...
     if (dayNoAtHotel < 0) {
@@ -56,9 +52,9 @@ function hotelCost(dayNoAtHotel){
     }
 }
 //console.log(hotelCost(-2));
+
 //all the name goes in the array below...
 var allNames = ["Jhankar", "Olalal", "Karim", "Rahim", "Sajib"];
-
 function megaFriend(arr) {
 //variable that will contain the longest string
   var long1 = arr[0];
