@@ -56,43 +56,17 @@ function hotelCost(dayNoAtHotel){
     }
 }
 //console.log(hotelCost(-2));
-// The array that contains names of unlimited friends;
-/*var nameArray = ["Kamal", "Jamal", "Shohidul", "Islam", "Enamul"];
-// The blank array that will contain only LARGEST friend name
-var largestName;
-var initialLength = 0;
-function megaFriend (nameArray) {
-    for (i=0; i<nameArray.length; i++){
-// Compare the first array item length with the next one and input it in the blank array.
-        if (nameArray[i].length > initialLength){
-                var initialLength = nameArray[i].length;
-                largestName = nameArray[i];
-                return largestName;
-        }
-        
+//all the name goes in the array below...
+var allNames = ["Jhankar", "Olalal", "Karim", "Rahim", "Sajib"];
+
+function megaFriend(arr) {
+//variable that will contain the longest string
+  var long1 = arr[0];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].length > long1.length) {
+      long1 = arr[i];
     }
+  }
+  return long1;
 }
-console.log (megaFriend(nameArray)); */
-// The array that contains names of unlimited friends;
-var nameArray = ['Jamal', 'Kamal', 'Enamul', 'Shohidul', 'Islam'];
-//Set an inital length of zero that will changed by the size of the length of strings  
-var initialLength = 0;  
-var longestName;
-function megaFriend(nameArray) {
-    for (var i = 0; i < nameArray.length; i++) {
-        if (nameArray[i].length > initialLength) {
-          var initialLength = nameArray[i].length;
-          longestName = nameArray[i];
-          return longestName;
-        }
-      }
-    }
-console.log(megaFriend(nameArray));
-/**
-function megaFriend(array with many strings){
-    find out the largest string in that array
-    return the largest name;
-}
-bonus- negative kilometers or days in hotel or budget or 
-empty array doesn't work- console log the error; Use comment;
-Indent properly. */
+//console.log(megaFriend(allNames));
