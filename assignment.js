@@ -1,7 +1,31 @@
 // https://github.com/makshud-nur/fundamental_JS
 function kilometerToMeter(kmeter){
-    const mtr = kmeter * 1000;
+    const mtr = kmeter * 1000; //multiply with 100
     return mtr;
 }
-var kmtometer = kilometerToMeter(13);
-console.log(kmtometer);
+//console.log(kilometerToMeter(3));
+function budgetCalculator(watch, phone, laptop){
+    const watchCost = watch * 50;
+    const phoneCost = phone * 100;
+    const laptopCost = laptop * 500;
+    const totalBudget = watchCost + phoneCost + laptopCost;
+    return totalBudget;
+}
+//console.log(budgetCalculator(2, 4, 1));
+/**
+function budgetCalculator(watch, phone, laptop){
+    50, 100, 500;
+}
+function hotelCost(yourDaysAtHotel){
+    first 10 days-100
+    11-20 80 dollar
+    20 er beshi 50 taka
+    return totalcost;
+}
+function megaFriend(array with many strings){
+    find out the largest string in that array
+    return the largest name;
+}
+bonus- negative kilometers or days in hotel or budget or 
+empty array doesn't work- console log the error; Use comment;
+Indent properly. */
